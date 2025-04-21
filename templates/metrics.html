@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Metrics Dashboard</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Metrics Dashboard</h1>
+        <table class="table table-bordered">
+            <tbody>
+                <tr><th>Total Requests</th><td>{{ total_requests }}</td></tr>
+                <tr><th>Successes</th><td>{{ successes }}</td></tr>
+                <tr><th>Failures</th><td>{{ failures }}</td></tr>
+                <tr><th>Success Rate (%)</th><td>{{ success_rate }}</td></tr>
+                <tr><th>Failure Rate (%)</th><td>{{ failure_rate }}</td></tr>
+                <tr><th>Average Latency (s)</th><td>{{ avg_latency }}</td></tr>
+                <tr><th>Prompt Tokens</th><td>{{ prompt_tokens }}</td></tr>
+                <tr><th>Completion Tokens</th><td>{{ completion_tokens }}</td></tr>
+                <tr><th>Total Tokens</th><td>{{ total_tokens }}</td></tr>
+            </tbody>
+        </table>
+        <a href="/" class="btn btn-primary">Back to Chat</a>
+    </div>
+</body>
+</html>

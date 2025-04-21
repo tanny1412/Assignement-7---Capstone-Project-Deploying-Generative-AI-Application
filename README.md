@@ -127,5 +127,8 @@ docker run --env-file .env -p 8080:8080 criminalbot
    - PINECONE_API_KEY
    - OPENAI_API_KEY
 
+## Access the AWS Deployed App
+
+You can access the AWS deployed app at: http://3.20.132.114:8080
     
 
